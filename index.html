@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BTX — 3 propuestas de tienda deportiva</title>
+<meta name="description" content="Tres direcciones award-winning para la nueva web ecommerce de BTX.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;0,700;0,900;1,900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#1B4FD8;--azul2:#4C86F5;--noche:#0B0E13;--panel:#131820}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:var(--noche);color:#fff;min-height:100vh;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+.top{text-align:center;padding:60px 20px 28px}
+.top img{height:64px;width:auto;margin:0 auto 20px}
+.top .k{font-family:'Archivo';font-weight:800;font-size:.68rem;letter-spacing:3px;text-transform:uppercase;color:var(--azul2)}
+.top h1{font-family:'Archivo';font-weight:900;font-style:italic;font-size:clamp(1.9rem,5.4vw,3.2rem);text-transform:uppercase;letter-spacing:-.02em;margin:12px 0 10px;line-height:1}
+.top p{color:rgba(255,255,255,.6);max-width:520px;margin:0 auto;line-height:1.6;font-size:.95rem}
+.grid{max-width:1160px;margin:26px auto 70px;padding:0 20px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid rgba(255,255,255,.1);border-radius:22px;overflow:hidden;transition:transform .35s,border-color .35s,box-shadow .35s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-8px);border-color:var(--azul2);box-shadow:0 24px 60px rgba(27,79,216,.28)}
+.mock{height:180px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.mock-1{background:linear-gradient(160deg,#0B0E13,#131b28)}
+.mock-1::after{content:'MODO PARTIDO';position:absolute;font-family:'Archivo';font-weight:900;font-style:italic;font-size:1.5rem;letter-spacing:1px;color:transparent;-webkit-text-stroke:1.5px var(--azul2);text-transform:uppercase}
+.mock-2{background:#F7F8FA}
+.mock-2::after{content:'CLUB BTX';position:absolute;font-family:'Archivo';font-weight:900;font-style:italic;font-size:1.7rem;color:#10151D;text-transform:uppercase}
+.mock-2::before{content:'';position:absolute;right:-24px;bottom:-24px;width:120px;height:120px;border-radius:50%;background:#1E63E9;opacity:.9}
+.mock-3{background:linear-gradient(150deg,#1B4FD8,#123390)}
+.mock-3::after{content:'ARMA TU KIT ⚡';position:absolute;font-family:'Archivo';font-weight:900;font-style:italic;font-size:1.4rem;color:#fff;text-transform:uppercase}
+.body{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.n{font-family:'Archivo';font-weight:900;font-size:.7rem;letter-spacing:2.5px;color:var(--azul2);text-transform:uppercase}
+.body h2{font-family:'Archivo';font-weight:900;font-style:italic;font-size:1.35rem;text-transform:uppercase;margin:8px 0}
+.body p{font-size:.87rem;color:rgba(255,255,255,.6);line-height:1.6;flex:1}
+.sw{display:flex;gap:7px;margin:14px 0}
+.sw i{width:22px;height:22px;border-radius:7px;border:1px solid rgba(255,255,255,.2)}
+.go{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:'Archivo';font-weight:800;font-size:.85rem;background:linear-gradient(120deg,var(--azul),#123390);color:#fff;border-radius:999px;padding:13px 22px;min-height:44px;transition:transform .25s,box-shadow .25s;text-transform:uppercase;letter-spacing:.5px}
+.card:hover .go{transform:translateY(-2px);box-shadow:0 10px 26px rgba(27,79,216,.4)}
+.ft{text-align:center;padding:0 20px 46px;color:rgba(255,255,255,.35);font-size:.78rem}
+</style>
+</head>
+<body>
+<div class="top">
+  <img src="img/logo-blanco.png" alt="BTX">
+  <div class="k">Propuesta de rediseño ecommerce · Grupo Digitals</div>
+  <h1>Tres canchas para tu tienda</h1>
+  <p>Tres direcciones de arte radicalmente distintas para el nuevo ecommerce de BTX, con catálogo real, personalización sublimada y cotización directa por WhatsApp.</p>
+</div>
+<div class="grid">
+  <a class="card" href="opcion-1.html">
+    <div class="mock mock-1"></div>
+    <div class="body">
+      <span class="n">Opción 01</span>
+      <h2>Modo Partido</h2>
+      <p>Dark de estadio nocturno: hero cinematográfico bajo focos, catálogo en rail horizontal, marcador de cifras y energía de marca deportiva grande. Para verse como Nike, no como tienda WordPress.</p>
+      <div class="sw"><i style="background:#0B0E13"></i><i style="background:#1A212C"></i><i style="background:#2E7CF6"></i><i style="background:#C8CDD5"></i></div>
+      <span class="go">Ver opción 01 →</span>
+    </div>
+  </a>
+  <a class="card" href="opcion-2.html">
+    <div class="mock mock-2"></div>
+    <div class="body">
+      <span class="n">Opción 02</span>
+      <h2>Club BTX</h2>
+      <p>Editorial claro con itálicas de velocidad: líneas de catálogo por deporte, flat-lay del kit con sello giratorio, proceso de sublimación como manifiesto del club. Premium y cercano.</p>
+      <div class="sw"><i style="background:#F7F8FA"></i><i style="background:#10151D"></i><i style="background:#1E63E9"></i><i style="background:#E8EEF8"></i></div>
+      <span class="go">Ver opción 02 →</span>
+    </div>
+  </a>
+  <a class="card" href="opcion-3.html">
+    <div class="mock mock-3"></div>
+    <div class="body">
+      <span class="n">Opción 03</span>
+      <h2>Arma tu Kit</h2>
+      <p>Conversión pura: configurador funcional (deporte → jugadores → prendas) con estimado en vivo y cotización armada por WhatsApp. El vendedor que atiende 24/7 sin descanso.</p>
+      <div class="sw"><i style="background:#1B4FD8"></i><i style="background:#0E1524"></i><i style="background:#EAF0FC"></i><i style="background:#FFFFFF"></i></div>
+      <span class="go">Ver opción 03 →</span>
+    </div>
+  </a>
+</div>
+<div class="ft">BTX · Propuesta interna de rediseño — no indexada</div>
+</body>
+</html>

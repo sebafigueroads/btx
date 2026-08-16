@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BTX — El club que fabrica tu equipo</title>
+<meta name="description" content="Equipamiento deportivo fabricado en Chile: balones, camisetas 100% sublimadas y kits personalizados para clubes, colegios y empresas. Despacho a todo Chile.">
+<meta property="og:title" content="BTX — Club BTX">
+<meta property="og:description" content="Fabricamos equipos deportivos. Camisetas sublimadas, balones y kits personalizados.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;0,700;0,900;1,700;1,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --hueso:#F7F8FA; --tinta:#10151D; --tinta2:#5A6674; --tinta3:#96A0AC;
+  --azul:#1E63E9; --azul2:#4C86F5; --hielo:#E8EEF8;
+  --fd:'Archivo',sans-serif; --fb:'Inter',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);background:var(--hueso);color:var(--tinta);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+::selection{background:var(--azul);color:#fff}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.22,1,.36,1)}
+.rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}*{animation:none !important}}
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:60;background:rgba(247,248,250,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(16,21,29,.07)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:68px;max-width:1160px;margin:0 auto;padding:0 22px}
+.nav-in img{height:38px;width:auto}
+.nav-links{display:flex;gap:26px;font-weight:600;font-size:.9rem;color:var(--tinta2)}
+.nav-links a:hover{color:var(--azul)}
+@media(max-width:760px){.nav-links{display:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:var(--fd);font-weight:800;font-size:.88rem;padding:13px 26px;border-radius:999px;transition:transform .3s,box-shadow .3s;min-height:46px;text-transform:uppercase;letter-spacing:.5px}
+.btn-az{background:linear-gradient(120deg,var(--azul),#1750bd);color:#fff;box-shadow:0 8px 26px rgba(30,99,233,.3)}
+.btn-az:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 14px 40px rgba(30,99,233,.45)}
+.btn-linea{border:1.5px solid rgba(16,21,29,.25);color:var(--tinta)}
+.btn-linea:hover{border-color:var(--azul);color:var(--azul)}
+/* ── HERO editorial ── */
+.hero{padding:130px 0 30px;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;top:-200px;right:-180px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(30,99,233,.1),transparent 70%)}
+.hero-kick{font-family:var(--fd);font-weight:800;font-size:.68rem;letter-spacing:4px;text-transform:uppercase;color:var(--azul);display:inline-flex;align-items:center;gap:12px;margin-bottom:22px}
+.hero-kick::before{content:'';width:44px;height:2.5px;background:var(--azul);border-radius:2px}
+h1{font-family:var(--fd);font-weight:900;font-style:italic;font-size:clamp(2.9rem,9.4vw,6.2rem);line-height:.92;letter-spacing:-.035em;text-transform:uppercase;max-width:12ch;position:relative;z-index:2}
+h1 em{font-style:italic;color:var(--azul)}
+.hero-grid{display:grid;grid-template-columns:1fr .9fr;gap:46px;align-items:end;margin-top:30px}
+.hero-p{font-size:clamp(1rem,2.4vw,1.15rem);line-height:1.72;color:var(--tinta2);max-width:46ch}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.hero-foto{position:relative;margin-top:-70px;z-index:1}
+.hero-foto .marco{border-radius:32px 32px 200px 32px;overflow:hidden;aspect-ratio:4/4.6;box-shadow:0 40px 90px rgba(16,21,29,.2)}
+.hero-foto img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.22,1,.36,1)}
+.hero-foto:hover img{transform:scale(1.06)}
+.hero-foto .sello{position:absolute;left:-30px;bottom:40px;width:110px;height:110px;border-radius:50%;background:var(--azul);color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;font-family:var(--fd);font-weight:800;font-size:.56rem;letter-spacing:1.6px;text-transform:uppercase;line-height:1.5;padding:14px;box-shadow:0 16px 40px rgba(30,99,233,.4);animation:girar 24s linear infinite}
+@keyframes girar{to{rotate:360deg}}
+.h-in{opacity:0;transform:translateY(32px);animation:hin .9s cubic-bezier(.22,1,.36,1) forwards}
+.h-in.d1{animation-delay:.15s}.h-in.d2{animation-delay:.3s}.h-in.d3{animation-delay:.45s}
+@keyframes hin{to{opacity:1;transform:none}}
+@media(max-width:900px){.hero{padding-top:115px}.hero-grid{grid-template-columns:1fr}.hero-foto{margin-top:8px}.hero-foto .marco{aspect-ratio:16/11;border-radius:26px 26px 130px 26px}.hero-foto .sello{left:auto;right:14px;bottom:-24px}}
+/* ── BANDA ── */
+.banda{margin-top:60px;padding:18px 0;background:var(--tinta);color:rgba(247,248,250,.5);overflow:hidden}
+.banda-t{display:flex;gap:52px;width:max-content;animation:mar 28s linear infinite;font-family:var(--fd);font-weight:900;font-style:italic;font-size:1.1rem;letter-spacing:1px;text-transform:uppercase;white-space:nowrap;align-items:center}
+.banda-t em{font-style:italic;color:var(--azul2)}
+@keyframes mar{to{transform:translateX(-50%)}}
+/* ── LÍNEAS DE CATÁLOGO (rails por deporte) ── */
+.linea-dep{padding:70px 0 8px}
+.ld-head{display:flex;align-items:baseline;gap:20px;margin-bottom:26px;flex-wrap:wrap}
+.ld-head .n{font-family:var(--fd);font-weight:900;font-style:italic;font-size:.85rem;color:var(--azul)}
+.ld-head h2{font-family:var(--fd);font-weight:900;font-style:italic;font-size:clamp(1.9rem,5.6vw,3.4rem);letter-spacing:-.03em;text-transform:uppercase;line-height:1}
+.ld-head .ver{margin-left:auto;font-family:var(--fd);font-weight:800;font-size:.78rem;letter-spacing:1.6px;text-transform:uppercase;color:var(--azul);border-bottom:2px solid var(--azul);padding:4px 2px;transition:gap .3s;display:inline-flex;gap:8px;min-height:40px;align-items:center}
+.ld-head .ver:hover{gap:14px}
+.ld-head .ver::after{content:'→'}
+.rail{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 22px 24px;margin:0 -22px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.rail::-webkit-scrollbar{display:none}
+.prod{flex:0 0 min(270px,74vw);scroll-snap-align:start;position:relative;transition:transform .35s}
+.prod:hover{transform:translateY(-6px)}
+.prod-img{border-radius:22px;overflow:hidden;aspect-ratio:1;background:#fff;box-shadow:0 10px 30px rgba(16,21,29,.08);position:relative}
+.prod-img img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.22,1,.36,1)}
+.prod:hover .prod-img img{transform:scale(1.07)}
+.prod-img .add{position:absolute;right:12px;bottom:12px;width:44px;height:44px;border-radius:50%;background:var(--tinta);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.3rem;border:0;cursor:pointer;transition:all .25s;opacity:.92}
+.prod-img .add:hover{background:var(--azul);transform:scale(1.1)}
+.prod-info{padding:14px 4px 0}
+.prod h3{font-family:var(--fd);font-weight:700;font-size:.98rem;line-height:1.25}
+.prod-precio{font-family:var(--fd);font-weight:900;font-style:italic;font-size:1.05rem;color:var(--azul);margin-top:4px;display:block}
+/* ── SUBLIMACIÓN editorial ── */
+.subli{margin:80px 0 0;background:var(--tinta);color:#fff;border-radius:0 220px 0 0;position:relative;overflow:hidden}
+.subli::after{content:'';position:absolute;bottom:-200px;right:-140px;width:520px;height:520px;border-radius:50%;border:2px solid rgba(76,134,245,.3)}
+.subli .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:56px;align-items:center;padding-top:92px;padding-bottom:92px;position:relative;z-index:2}
+.subli-visual{border-radius:24px 150px 24px 24px;overflow:hidden;aspect-ratio:4/4.2;box-shadow:0 40px 90px rgba(0,0,0,.4)}
+.subli-visual img{width:100%;height:100%;object-fit:cover}
+.subli .mini{font-family:var(--fd);font-weight:800;font-size:.66rem;letter-spacing:3.6px;text-transform:uppercase;color:var(--azul2);display:block;margin-bottom:14px}
+.subli h2{font-family:var(--fd);font-weight:900;font-style:italic;font-size:clamp(2rem,5.4vw,3.4rem);text-transform:uppercase;line-height:.96;letter-spacing:-.025em}
+.subli h2 em{font-style:italic;color:var(--azul2)}
+.subli-p{margin:18px 0 26px;color:rgba(247,248,250,.7);line-height:1.75;max-width:46ch}
+.paso{display:flex;gap:16px;align-items:flex-start;padding:13px 0;border-top:1px solid rgba(247,248,250,.12);transition:padding-left .3s}
+.paso:hover{padding-left:10px}
+.paso .n{font-family:var(--fd);font-weight:900;font-style:italic;font-size:1.3rem;color:var(--azul2);flex-shrink:0;width:38px}
+.paso b{display:block;font-family:var(--fd);font-weight:700;font-size:.98rem;margin-bottom:2px}
+.paso span{font-size:.85rem;color:rgba(247,248,250,.6);line-height:1.55}
+@media(max-width:900px){.subli{border-radius:0 120px 0 0}.subli .wrap{grid-template-columns:1fr}.subli-visual{aspect-ratio:16/10}}
+/* ── GARANTÍAS lista editorial ── */
+.gar{padding:90px 0 60px}
+.gar-head{max-width:640px;margin-bottom:44px}
+.gar-head .mini{font-family:var(--fd);font-weight:800;font-size:.66rem;letter-spacing:3.6px;text-transform:uppercase;color:var(--azul);display:block;margin-bottom:12px}
+.gar-head h2{font-family:var(--fd);font-weight:900;font-style:italic;font-size:clamp(2rem,5.2vw,3.2rem);text-transform:uppercase;letter-spacing:-.025em;line-height:.98}
+.gitem{display:flex;gap:26px;align-items:baseline;padding:26px 0;border-top:1.5px solid rgba(16,21,29,.12);transition:padding-left .35s}
+.gitem:hover{padding-left:14px}
+.gitem:last-child{border-bottom:1.5px solid rgba(16,21,29,.12)}
+.gitem .n{font-family:var(--fd);font-weight:900;font-style:italic;font-size:.9rem;color:var(--azul);width:36px;flex-shrink:0}
+.gitem h3{font-family:var(--fd);font-weight:700;font-size:clamp(1.05rem,2.6vw,1.35rem);flex:1;min-width:190px}
+.gitem p{flex:1.5;color:var(--tinta2);line-height:1.65;font-size:.92rem;min-width:240px}
+@media(max-width:720px){.gitem{flex-direction:column;gap:6px}}
+/* ── CIFRAS al aire ── */
+.cifras{padding:20px 0 80px}
+.cifras .wrap{display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap}
+.cf{flex:1;min-width:160px;text-align:center}
+.cf b{font-family:var(--fd);font-weight:900;font-style:italic;font-size:clamp(2.2rem,5.6vw,3.6rem);letter-spacing:-.02em;color:var(--azul);display:block}
+.cf span{font-size:.76rem;font-weight:700;letter-spacing:2.2px;text-transform:uppercase;color:var(--tinta3)}
+/* ── CTA FINAL ── */
+.fin{margin:0 22px 90px;border-radius:36px;background:linear-gradient(135deg,var(--azul),#1750bd 60%,#4C86F5);color:#fff;padding:84px 30px;text-align:center;position:relative;overflow:hidden}
+.fin::before{content:'';position:absolute;top:-140px;left:-100px;width:420px;height:420px;border-radius:50%;background:rgba(255,255,255,.1);animation:respira 7s ease-in-out infinite alternate}
+@keyframes respira{to{transform:scale(1.16) translateY(-14px)}}
+.fin h2{font-family:var(--fd);font-weight:900;font-style:italic;font-size:clamp(2rem,6vw,3.8rem);text-transform:uppercase;line-height:.95;letter-spacing:-.025em;max-width:18ch;margin:0 auto 16px;position:relative;z-index:2}
+.fin p{color:rgba(255,255,255,.88);max-width:44ch;margin:0 auto 28px;line-height:1.65;position:relative;z-index:2}
+.fin .btn{background:#fff;color:var(--azul);position:relative;z-index:2}
+/* ── FOOTER ── */
+footer{padding:0 0 96px;color:var(--tinta2)}
+.ft-in{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}
+.ft-in img{height:48px;width:auto;margin-bottom:14px}
+.ft-in p{font-size:.86rem;line-height:1.65;max-width:280px;color:var(--tinta3)}
+.ft-col b{display:block;font-family:var(--fd);font-weight:800;font-size:.64rem;letter-spacing:3px;text-transform:uppercase;color:var(--azul);margin-bottom:14px}
+.ft-col a{display:block;padding:5px 0;font-size:.92rem}
+.ft-col a:hover{color:var(--azul)}
+.ft-base{margin-top:40px;padding-top:20px;border-top:1px solid rgba(16,21,29,.1);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.76rem;color:var(--tinta3)}
+/* ── FLOTANTES ── */
+.wa{position:fixed;right:18px;bottom:18px;z-index:70;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(37,211,102,.45);transition:transform .3s}
+.wa:hover{transform:scale(1.1)}
+.wa svg{width:30px;height:30px;fill:#fff}
+.wa::before{content:'';position:absolute;inset:-6px;border-radius:50%;border:2px solid rgba(37,211,102,.5);animation:wap 2s ease-out infinite}
+@keyframes wap{0%{transform:scale(.85);opacity:1}100%{transform:scale(1.25);opacity:0}}
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:65;background:linear-gradient(120deg,var(--azul),#1750bd);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:none;transform:translateY(110%);transition:transform .4s}
+.sticky-cta.on{transform:none}
+.sticky-cta a{display:flex;align-items:center;justify-content:center;gap:8px;font-family:var(--fd);font-weight:800;font-size:.95rem;color:#fff;min-height:44px;text-transform:uppercase;letter-spacing:.5px}
+@media(max-width:768px){.sticky-cta{display:block}.wa{bottom:76px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a href="#top" aria-label="BTX"><img src="img/logo.png" alt="BTX"></a>
+    <div class="nav-links">
+      <a href="#futbol">Fútbol</a>
+      <a href="#basquet">Básquetbol · Vóleibol</a>
+      <a href="#personaliza">Personaliza</a>
+    </div>
+    <a class="btn btn-az" href="https://wa.me/56940704858?text=Hola%20BTX%2C%20quiero%20cotizar%20equipamiento" target="_blank" rel="noopener">Cotizar</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="hero-kick h-in">Fabricamos equipos deportivos · desde 2020</span>
+    <h1 class="h-in d1">Bienvenido al club <em>BTX.</em></h1>
+    <div class="hero-grid">
+      <div class="h-in d2">
+        <p class="hero-p">Camisetas 100% sublimadas, balones certificados y kits completos para clubes, colegios y empresas. Fabricado en Chile, despachado a todo Chile.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-az" href="#futbol">Ver catálogo</a>
+          <a class="btn btn-linea" href="#personaliza">Diseñar mi kit</a>
+        </div>
+      </div>
+      <div class="hero-foto h-in d3">
+        <div class="marco"><img src="img/hero-2.jpg" alt="Kit deportivo completo BTX" onerror="this.parentElement.style.background='linear-gradient(160deg,#E8EEF8,#d8e2f2)'"></div>
+        <span class="sello">100% Sublimado · Hecho en Chile ·</span>
+      </div>
+    </div>
+  </div>
+  <div class="banda" aria-hidden="true"><div class="banda-t" id="bandaT"></div></div>
+</header>
+
+<!-- LÍNEA FÚTBOL -->
+<section class="linea-dep" id="futbol">
+  <div class="wrap">
+    <div class="ld-head rv"><span class="n">LÍNEA 01</span><h2>Fútbol</h2><a class="ver" href="https://wa.me/56940704858?text=Hola%20BTX%2C%20quiero%20ver%20la%20l%C3%ADnea%20de%20f%C3%BAtbol" target="_blank" rel="noopener">Cotizar línea</a></div>
+    <div class="rail">
+      <article class="prod rv"><div class="prod-img"><img src="img/prod-balon.jpg" alt="Balón Mitre New Final"><button class="add" aria-label="Consultar">+</button></div><div class="prod-info"><h3>Balón Mitre New Final</h3><span class="prod-precio">$15.990</span></div></article>
+      <article class="prod rv"><div class="prod-img"><img src="img/prod-camiseta.jpg" alt="Camiseta sublimada"><button class="add" aria-label="Consultar">+</button></div><div class="prod-info"><h3>Camiseta 100% sublimada</h3><span class="prod-precio">A pedido</span></div></article>
+      <article class="prod rv"><div class="prod-img"><img src="img/prod-short.jpg" alt="Short de juego"><button class="add" aria-label="Consultar">+</button></div><div class="prod-info"><h3>Short de juego</h3><span class="prod-precio">$5.000</span></div></article>
+      <article class="prod rv"><div class="prod-img"><img src="img/prod-guantes.jpg" alt="Guantes de arquero"><button class="add" aria-label="Consultar">+</button></div><div class="prod-info"><h3>Guantes de arquero Pro</h3><span class="prod-precio">$48.990</span></div></article>
+      <article class="prod rv"><div class="prod-img"><img src="img/prod-balon.jpg" alt="Balón 5000 Vantaggio ANFP"><button class="add" aria-label="Consultar">+</button></div><div class="prod-info"><h3>Fútbol 5000 Vantaggio ANFP</h3><span class="prod-precio">$79.990</span></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- LÍNEA BÁSQUET/VÓLEY -->
+<section class="linea-dep" id="basquet">
+  <div class="wrap">
+    <div class="ld-head rv"><span class="n">LÍNEA 02</span><h2>Básquet &amp; Vóley</h2><a class="ver" href="https://wa.me/56940704858?text=Hola%20BTX%2C%20quiero%20ver%20b%C3%A1squet%20y%20v%C3%B3ley" target="_blank" rel="noopener">Cotizar línea</a></div>
+    <div class="rail">
+      <article class="prod rv"><div class="prod-img"><img src="img/prod-basquet.jpg" alt="Molten BG3200 LNB"><button class="add" aria-label="Consultar">+</button></div><div class="prod-info"><h3>Molten BG3200 LNB</h3><span class="prod-precio">$32.990</span></div></article>
+      <article class="prod rv"><div class="prod-img"><img src="img/prod-voley.jpg" alt="Molten V5M-1500"><button class="add" aria-label="Consultar">+</button></div><div class="prod-info"><h3>Molten V5M-1500</h3><span class="prod-precio">$29.990</span></div></article>
+      <article class="prod rv"><div class="prod-img"><img src="img/prod-voley.jpg" alt="Molten V5M-1700"><button class="add" aria-label="Consultar">+</button></div><div class="prod-info"><h3>Molten V5M-1700</h3><span class="prod-precio">$29.990</span></div></article>
+      <article class="prod rv"><div class="prod-img"><img src="img/prod-camiseta.jpg" alt="Uniforme de básquet sublimado"><button class="add" aria-label="Consultar">+</button></div><div class="prod-info"><h3>Uniforme básquet sublimado</h3><span class="prod-precio">A pedido</span></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- SUBLIMACIÓN -->
+<section class="subli" id="personaliza">
+  <div class="wrap">
+    <div class="subli-visual rv"><img src="img/hero-3.jpg" alt="Equipo celebrando con uniformes BTX" onerror="this.parentElement.style.background='linear-gradient(160deg,#1a2230,#10151D)'"></div>
+    <div class="rv">
+      <span class="mini">Personalización real</span>
+      <h2>Tu escudo, <em>bordado en píxeles.</em></h2>
+      <p class="subli-p">Sublimación de borde a borde: colores que no se lavan, números que no se despegan y un diseño que es 100% de tu club.</p>
+      <div class="paso"><span class="n">01</span><div><b>Idea por WhatsApp</b><span>Colores, escudo y referencias. Te asesoramos gratis.</span></div></div>
+      <div class="paso"><span class="n">02</span><div><b>Muestra digital</b><span>Ves el kit terminado antes de fabricar, con ajustes incluidos.</span></div></div>
+      <div class="paso"><span class="n">03</span><div><b>Fabricación certificada</b><span>Materiales de alta calidad, sublimado real, tallas S a XXL.</span></div></div>
+      <div class="paso"><span class="n">04</span><div><b>Despacho a todo Chile</b><span>Puntualidad de fabricante. Pago FLOW o transferencia.</span></div></div>
+      <div style="margin-top:24px"><a class="btn btn-az" href="https://wa.me/56940704858?text=Hola%20BTX%2C%20quiero%20dise%C3%B1ar%20el%20kit%20de%20mi%20club" target="_blank" rel="noopener">Diseñar mi kit</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- GARANTÍAS -->
+<section class="gar">
+  <div class="wrap">
+    <div class="gar-head rv"><span class="mini">Por qué BTX</span><h2>Reglas del club</h2></div>
+    <div class="gitem rv"><span class="n">01</span><h3>Calidad insuperable</h3><p>Materiales certificados y costuras que aguantan la temporada completa. Si no aguanta, no sale de la fábrica.</p></div>
+    <div class="gitem rv"><span class="n">02</span><h3>Puntualidad de fabricante</h3><p>Sin intermediarios: fabricamos nosotros y tu pedido llega cuando lo prometimos.</p></div>
+    <div class="gitem rv"><span class="n">03</span><h3>Despacho a todo Chile</h3><p>De Arica a Punta Arenas, con pago seguro vía FLOW o transferencia.</p></div>
+    <div class="gitem rv"><span class="n">04</span><h3>Asesoría de verdad</h3><p>Te ayudamos a elegir tallas, materiales y diseño — como si fuera nuestro propio club.</p></div>
+  </div>
+</section>
+
+<!-- CIFRAS -->
+<section class="cifras">
+  <div class="wrap">
+    <div class="cf rv"><b>3.500+</b><span>Clientes</span></div>
+    <div class="cf rv"><b>200</b><span>Proyectos</span></div>
+    <div class="cf rv"><b>24</b><span>Partners</span></div>
+    <div class="cf rv"><b>2020</b><span>Desde</span></div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="fin rv">
+  <h2>Que tu equipo se vea como equipo.</h2>
+  <p>Cotiza kits completos, balones y accesorios con asesoría directa del fabricante.</p>
+  <a class="btn" href="https://wa.me/56940704858?text=Hola%20BTX%2C%20quiero%20cotizar%20el%20kit%20de%20mi%20equipo" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+</section>
+
+<footer>
+  <div class="wrap ft-in">
+    <div>
+      <img src="img/logo.png" alt="BTX">
+      <p>Fabricamos equipos deportivos en Chile: balones, camisetas sublimadas e indumentaria personalizada.</p>
+    </div>
+    <div class="ft-col">
+      <b>Catálogo</b>
+      <a href="#futbol">Fútbol</a>
+      <a href="#basquet">Básquetbol</a>
+      <a href="#basquet">Vóleibol</a>
+      <a href="#personaliza">Personalización</a>
+    </div>
+    <div class="ft-col">
+      <b>Contacto</b>
+      <a href="https://wa.me/56940704858" target="_blank" rel="noopener">+56 9 4070 4858</a>
+      <a href="mailto:contacto@btx.cl">contacto@btx.cl</a>
+      <a href="https://instagram.com/btx_chile" target="_blank" rel="noopener">Instagram @btx_chile</a>
+      <a href="https://tiktok.com/@btxchile" target="_blank" rel="noopener">TikTok @btxchile</a>
+    </div>
+  </div>
+  <div class="wrap ft-base">
+    <span>© 2026 BTX — Fabricamos equipos deportivos</span>
+    <span>Pago seguro · FLOW / Transferencia</span>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/56940704858?text=Hola%20BTX%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.4 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.9-1.3-4.8-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 .9c.3.2.5.3.6.4 0 .2 0 .7-.2 1.3z"/></svg>
+</a>
+<div class="sticky-cta" id="stickyCta"><a href="https://wa.me/56940704858?text=Hola%20BTX%2C%20quiero%20cotizar" target="_blank" rel="noopener">Cotiza tu kit →</a></div>
+
+<script>
+(function(){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+  var hero=document.querySelector('.hero'),sc=document.getElementById('stickyCta');
+  new IntersectionObserver(function(es){es.forEach(function(e){sc.classList.toggle('on',!e.isIntersecting)})},{threshold:0}).observe(hero);
+  var eq=['Fútbol','<em>Básquetbol</em>','Vóleibol','<em>Ciclismo</em>','100% Sublimado','<em>Despacho a todo Chile</em>'];
+  var t=document.getElementById('bandaT');
+  if(t){var h='';for(var k=0;k<3;k++){eq.forEach(function(x){h+='<span>'+x+'</span> · '})}t.innerHTML=h}
+  document.querySelectorAll('.prod .add').forEach(function(b){
+    b.addEventListener('click',function(){
+      var card=b.closest('.prod');
+      var nombre=card.querySelector('h3').textContent;
+      var precio=card.querySelector('.prod-precio').textContent;
+      var txt='Hola BTX, me interesa: '+nombre+' ('+precio+')';
+      window.open('https://wa.me/56940704858?text='+encodeURIComponent(txt),'_blank','noopener');
+    });
+  });
+})();
+</script>
+</body>
+</html>

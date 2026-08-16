@@ -151,8 +151,8 @@ footer{padding:0 0 96px;color:var(--tinta2)}
   <div class="nav-in">
     <a href="#top" aria-label="BTX"><img src="img/logo.png" alt="BTX"></a>
     <div class="nav-links">
-      <a href="#futbol">Fútbol</a>
-      <a href="#basquet">Básquetbol · Vóleibol</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#personaliza">Sublimación</a>
       <a href="#personaliza">Personaliza</a>
     </div>
     <a class="btn btn-az" href="https://wa.me/56940704858?text=Hola%20BTX%2C%20quiero%20cotizar%20equipamiento" target="_blank" rel="noopener">Cotizar</a>
@@ -168,7 +168,7 @@ footer{padding:0 0 96px;color:var(--tinta2)}
       <div class="h-in d2">
         <p class="hero-p">Camisetas 100% sublimadas, balones certificados y kits completos para clubes, colegios y empresas. Fabricado en Chile, despachado a todo Chile.</p>
         <div class="hero-ctas">
-          <a class="btn btn-az" href="#futbol">Ver catálogo</a>
+          <a class="btn btn-az" href="#catalogo">Ver catálogo</a>
           <a class="btn btn-linea" href="#personaliza">Diseñar mi kit</a>
         </div>
       </div>
@@ -181,31 +181,121 @@ footer{padding:0 0 96px;color:var(--tinta2)}
   <div class="banda" aria-hidden="true"><div class="banda-t" id="bandaT"></div></div>
 </header>
 
-<!-- LÍNEA FÚTBOL -->
-<section class="linea-dep" id="futbol">
+<!-- CATÁLOGO PORTAL -->
+<section class="ptl" id="catalogo">
   <div class="wrap">
-    <div class="ld-head rv"><span class="n">LÍNEA 01</span><h2>Fútbol</h2><a class="ver" href="https://wa.me/56940704858?text=Hola%20BTX%2C%20quiero%20ver%20la%20l%C3%ADnea%20de%20f%C3%BAtbol" target="_blank" rel="noopener">Cotizar línea</a></div>
-    <div class="rail">
-      <article class="prod rv"><div class="prod-img"><img src="img/prod-balon.jpg" alt="Balón Mitre New Final"><button class="add" aria-label="Consultar">+</button></div><div class="prod-info"><h3>Balón Mitre New Final</h3><span class="prod-precio">$15.990</span></div></article>
-      <article class="prod rv"><div class="prod-img"><img src="img/prod-camiseta.jpg" alt="Camiseta sublimada"><button class="add" aria-label="Consultar">+</button></div><div class="prod-info"><h3>Camiseta 100% sublimada</h3><span class="prod-precio">A pedido</span></div></article>
-      <article class="prod rv"><div class="prod-img"><img src="img/prod-short.jpg" alt="Short de juego"><button class="add" aria-label="Consultar">+</button></div><div class="prod-info"><h3>Short de juego</h3><span class="prod-precio">$5.000</span></div></article>
-      <article class="prod rv"><div class="prod-img"><img src="img/prod-guantes.jpg" alt="Guantes de arquero"><button class="add" aria-label="Consultar">+</button></div><div class="prod-info"><h3>Guantes de arquero Pro</h3><span class="prod-precio">$48.990</span></div></article>
-      <article class="prod rv"><div class="prod-img"><img src="img/prod-balon.jpg" alt="Balón 5000 Vantaggio ANFP"><button class="add" aria-label="Consultar">+</button></div><div class="prod-info"><h3>Fútbol 5000 Vantaggio ANFP</h3><span class="prod-precio">$79.990</span></div></article>
+    <div class="ptl-head rv">
+      <span class="ptl-kick">// Catálogo BTX</span>
+      <h2>Encuentra tu <em>equipamiento</em></h2>
+      <div class="ptl-bar">
+        <div class="ptl-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <input id="ptlQ" type="text" placeholder="Buscar balones, camisetas, guantes…" maxlength="60">
+        </div>
+        <div class="ptl-chips" id="ptlChips">
+          <button class="ptl-chip on" data-c="todos">Todos</button>
+          <button class="ptl-chip" data-c="futbol">⚽ Fútbol</button>
+          <button class="ptl-chip" data-c="basquet">🏀 Básquet</button>
+          <button class="ptl-chip" data-c="voley">🏐 Vóley</button>
+          <button class="ptl-chip" data-c="arquero">🧤 Arqueros</button>
+          <button class="ptl-chip" data-c="indumentaria">👕 Indumentaria</button>
+        </div>
+      </div>
+      <div class="ptl-count"><b id="ptlN">14</b> productos · despacho a todo Chile</div>
     </div>
+    <div class="ptl-grid" id="ptlGrid"></div>
+    <div class="ptl-vacio" id="ptlVacio" hidden>Sin resultados para tu búsqueda. <button id="ptlLimpiar">Limpiar filtros</button></div>
   </div>
-</section>
-
-<!-- LÍNEA BÁSQUET/VÓLEY -->
-<section class="linea-dep" id="basquet">
-  <div class="wrap">
-    <div class="ld-head rv"><span class="n">LÍNEA 02</span><h2>Básquet &amp; Vóley</h2><a class="ver" href="https://wa.me/56940704858?text=Hola%20BTX%2C%20quiero%20ver%20b%C3%A1squet%20y%20v%C3%B3ley" target="_blank" rel="noopener">Cotizar línea</a></div>
-    <div class="rail">
-      <article class="prod rv"><div class="prod-img"><img src="img/prod-basquet.jpg" alt="Molten BG3200 LNB"><button class="add" aria-label="Consultar">+</button></div><div class="prod-info"><h3>Molten BG3200 LNB</h3><span class="prod-precio">$32.990</span></div></article>
-      <article class="prod rv"><div class="prod-img"><img src="img/prod-voley.jpg" alt="Molten V5M-1500"><button class="add" aria-label="Consultar">+</button></div><div class="prod-info"><h3>Molten V5M-1500</h3><span class="prod-precio">$29.990</span></div></article>
-      <article class="prod rv"><div class="prod-img"><img src="img/prod-voley.jpg" alt="Molten V5M-1700"><button class="add" aria-label="Consultar">+</button></div><div class="prod-info"><h3>Molten V5M-1700</h3><span class="prod-precio">$29.990</span></div></article>
-      <article class="prod rv"><div class="prod-img"><img src="img/prod-camiseta.jpg" alt="Uniforme de básquet sublimado"><button class="add" aria-label="Consultar">+</button></div><div class="prod-info"><h3>Uniforme básquet sublimado</h3><span class="prod-precio">A pedido</span></div></article>
-    </div>
-  </div>
+  <style>
+  .ptl{padding:80px 0}
+  .ptl-head{margin-bottom:26px}
+  .ptl-kick{font-family:var(--fd);font-weight:800;font-size:.66rem;letter-spacing:3.4px;text-transform:uppercase;color:var(--azul);display:block;margin-bottom:10px}
+  .ptl-head h2{font-family:var(--fd);font-weight:900;font-style:italic;font-size:clamp(2.1rem,6vw,3.8rem);text-transform:uppercase;letter-spacing:-.025em;line-height:.96;margin-bottom:24px}
+  .ptl-head h2 em{font-style:italic;color:var(--azul)}
+  .ptl-bar{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .ptl-search{display:flex;align-items:center;gap:10px;flex:1;min-width:min(340px,100%);background:#fff;border:1.5px solid rgba(16,21,29,.14);border-radius:999px;padding:4px 8px 4px 18px;transition:border-color .25s}
+  .ptl-search:focus-within{border-color:var(--azul)}
+  .ptl-search svg{width:19px;height:19px;color:var(--azul);flex-shrink:0}
+  .ptl-search input{flex:1;background:transparent;border:0;outline:0;color:inherit;font-family:var(--fb);font-size:.95rem;min-height:48px}
+  .ptl-chips{display:flex;gap:8px;flex-wrap:wrap}
+  .ptl-chip{border:1.5px solid rgba(16,21,29,.14);background:transparent;color:inherit;border-radius:999px;padding:11px 18px;font-family:var(--fd);font-weight:700;font-size:.82rem;cursor:pointer;transition:all .25s;min-height:44px}
+  .ptl-chip:hover{border-color:var(--azul)}
+  .ptl-chip.on{background:var(--azul);border-color:var(--azul);color:#fff;box-shadow:0 6px 18px rgba(30,99,233,.25)}
+  .ptl-count{margin-top:16px;font-family:var(--fd);font-weight:700;font-size:.8rem;letter-spacing:1.6px;text-transform:uppercase;color:var(--tinta3)}
+  .ptl-count b{color:var(--azul);font-size:1.05rem}
+  .ptl-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(240px,44vw),1fr));gap:16px;margin-top:22px}
+  .ptl-card{border-radius:22px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(16,21,29,.08);transition:transform .35s,box-shadow .35s,opacity .4s,scale .4s;position:relative;border:1px solid rgba(16,21,29,.14)}
+  .ptl-card:hover{transform:translateY(-7px);box-shadow:0 24px 56px rgba(30,99,233,.25)}
+  .ptl-card.fuera{opacity:0;scale:.92;pointer-events:none;position:absolute;visibility:hidden}
+  .ptl-img{aspect-ratio:1;overflow:hidden;background:#E9ECF1}
+  .ptl-img img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.22,1,.36,1)}
+  .ptl-card:hover .ptl-img img{transform:scale(1.08)}
+  .ptl-tag{position:absolute;top:12px;left:12px;font-family:var(--fd);font-weight:800;font-size:.58rem;letter-spacing:1.6px;text-transform:uppercase;background:rgba(16,21,29,.85);color:#fff;padding:7px 12px;border-radius:999px;backdrop-filter:blur(4px)}
+  .ptl-info{padding:15px 16px 17px}
+  .ptl-info h3{font-family:var(--fd);font-weight:700;font-size:.96rem;line-height:1.25;min-height:2.4em}
+  .ptl-foot{display:flex;align-items:center;justify-content:space-between;margin-top:8px}
+  .ptl-precio{font-family:var(--fd);font-weight:900;font-style:italic;font-size:1.1rem;color:var(--azul)}
+  .ptl-add{width:44px;height:44px;border-radius:50%;background:var(--azul);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.25rem;border:0;cursor:pointer;transition:all .25s}
+  .ptl-add:hover{transform:scale(1.12);box-shadow:0 8px 22px rgba(30,99,233,.25)}
+  .ptl-vacio{text-align:center;padding:44px 20px;color:var(--tinta3);font-size:.95rem}
+  .ptl-vacio button{background:transparent;border:0;color:var(--azul);font-weight:700;cursor:pointer;text-decoration:underline;font-size:.95rem;min-height:44px}
+  </style>
+  <script>
+  (function(){
+    var PRODS=[
+      {n:'Balón Mitre New Final',c:'futbol',cl:'Fútbol',p:15990,img:'img/prod-balon.jpg'},
+      {n:'Balón Kelme Galáctico',c:'futbol',cl:'Fútbol',p:18990,img:'img/prod-balon.jpg'},
+      {n:'Balón Kelme Triton',c:'futbol',cl:'Fútbol',p:28990,img:'img/prod-balon.jpg'},
+      {n:'Fútbol 1000 UEFA Conference',c:'futbol',cl:'Fútbol',p:22990,img:'img/prod-balon.jpg'},
+      {n:'Fútbol 1000 UEFA Europa',c:'futbol',cl:'Fútbol',p:22990,img:'img/prod-balon.jpg'},
+      {n:'Vantaggio ANFP Logo',c:'futbol',cl:'Fútbol',p:22990,img:'img/prod-balon.jpg'},
+      {n:'Fútbol 5000 Vantaggio ANFP',c:'futbol',cl:'Fútbol · Pro',p:79990,img:'img/prod-balon.jpg'},
+      {n:'Molten BG3200 LNB',c:'basquet',cl:'Básquetbol',p:32990,img:'img/prod-basquet.jpg'},
+      {n:'Molten V5M-1500',c:'voley',cl:'Vóleibol',p:29990,img:'img/prod-voley.jpg'},
+      {n:'Molten V5M-1700',c:'voley',cl:'Vóleibol',p:29990,img:'img/prod-voley.jpg'},
+      {n:'Guantes de arquero Pro',c:'arquero',cl:'Arqueros',p:48990,img:'img/prod-guantes.jpg'},
+      {n:'Camiseta 100% sublimada',c:'indumentaria',cl:'Sublimado',p:0,img:'img/prod-camiseta.jpg'},
+      {n:'Short de juego',c:'indumentaria',cl:'Indumentaria',p:5000,img:'img/prod-short.jpg'},
+      {n:'Medias oficiales',c:'indumentaria',cl:'Indumentaria',p:3500,img:'img/prod-short.jpg'}
+    ];
+    var grid=document.getElementById('ptlGrid'), nEl=document.getElementById('ptlN');
+    var q='', cat='todos';
+    var fmt=function(p){return p===0?'A pedido':'$'+p.toLocaleString('es-CL')};
+    PRODS.forEach(function(p,i){
+      var card=document.createElement('article');
+      card.className='ptl-card rv on';
+      card.dataset.c=p.c; card.dataset.n=p.n.toLowerCase();
+      card.innerHTML='<span class="ptl-tag">'+p.cl+'</span><div class="ptl-img"><img src="'+p.img+'" alt="'+p.n+'" loading="lazy"></div>'
+        +'<div class="ptl-info"><h3>'+p.n+'</h3><div class="ptl-foot"><span class="ptl-precio">'+fmt(p.p)+'</span><button class="ptl-add" aria-label="Cotizar">+</button></div></div>';
+      card.querySelector('.ptl-add').addEventListener('click',function(){
+        window.open('https://wa.me/56940704858?text='+encodeURIComponent('Hola BTX, me interesa: '+p.n+' ('+fmt(p.p)+')'),'_blank','noopener');
+      });
+      grid.appendChild(card);
+    });
+    function filtrar(){
+      var vis=0;
+      grid.querySelectorAll('.ptl-card').forEach(function(c){
+        var ok=(cat==='todos'||c.dataset.c===cat)&&(!q||c.dataset.n.indexOf(q)>-1);
+        c.classList.toggle('fuera',!ok);
+        if(ok)vis++;
+      });
+      nEl.textContent=vis;
+      document.getElementById('ptlVacio').hidden=vis>0;
+    }
+    document.getElementById('ptlQ').addEventListener('input',function(e){q=e.target.value.trim().toLowerCase();filtrar()});
+    document.querySelectorAll('#ptlChips .ptl-chip').forEach(function(b){
+      b.addEventListener('click',function(){
+        document.querySelectorAll('#ptlChips .ptl-chip').forEach(function(x){x.classList.remove('on')});
+        b.classList.add('on'); cat=b.dataset.c; filtrar();
+      });
+    });
+    document.getElementById('ptlLimpiar').addEventListener('click',function(){
+      q='';cat='todos';document.getElementById('ptlQ').value='';
+      document.querySelectorAll('#ptlChips .ptl-chip').forEach(function(x){x.classList.toggle('on',x.dataset.c==='todos')});
+      filtrar();
+    });
+  })();
+  </script>
 </section>
 
 <!-- SUBLIMACIÓN -->
@@ -261,7 +351,7 @@ footer{padding:0 0 96px;color:var(--tinta2)}
     </div>
     <div class="ft-col">
       <b>Catálogo</b>
-      <a href="#futbol">Fútbol</a>
+      <a href="#catalogo">Catálogo</a>
       <a href="#basquet">Básquetbol</a>
       <a href="#basquet">Vóleibol</a>
       <a href="#personaliza">Personalización</a>
